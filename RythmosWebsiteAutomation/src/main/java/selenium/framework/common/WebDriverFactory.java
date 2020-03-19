@@ -2,20 +2,8 @@ package selenium.framework.common;
 
 import java.io.FileInputStream;
 import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class WebDriverFactory {
 
@@ -41,8 +29,8 @@ public class WebDriverFactory {
 			
 		}
 
-	//	System.out.println(browser);
-		if (browser.equals("firefox"))
+		System.out.println(browser);
+		/*		if (browser.equals("firefox"))
 			driver = getFirefoxDriver();
 		else if (browser.equals("ie"))
 			driver = getInternetExplorerDriver();
@@ -51,9 +39,9 @@ public class WebDriverFactory {
 		} else if (browser.equals("phantomjs")) {
 			driver = getPhantomjsDriver();
 		}
-
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get(url);
+*/
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//driver.get(url);
 		
 		return driver;
     }
@@ -69,17 +57,17 @@ public class WebDriverFactory {
 	 * 
 	 * @return
 	 */
-	private static WebDriver getInternetExplorerDriver() {
+/*	private static WebDriver getInternetExplorerDriver() {
 		System.out.println("Launching IE Driver.");
 		if (remoteAddress != null) {
-			DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
+		DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
 			capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
 			return new RemoteWebDriver(remoteAddress, capabilities);
 		} else {
 
 			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "/drivers/IEDriverServer.exe");
 			DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
-			// caps.setCapability("ignoreZoomSetting", true);
+			caps.setCapability("ignoreZoomSetting", true);
 			caps.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
 			caps.setCapability(InternetExplorerDriver.REQUIRE_WINDOW_FOCUS, true);
 			caps.setCapability("ensureCleanSession", true);
@@ -94,6 +82,7 @@ public class WebDriverFactory {
 	 * 
 	 * @return
 	 */
+	/*
 	private static WebDriver getFirefoxDriver() {
 		System.out.println("Launching Firefox Driver.");
 		if (remoteAddress != null) {
@@ -111,6 +100,7 @@ public class WebDriverFactory {
 	 * 
 	 * @return
 	 */
+	/*
 	private static WebDriver getChromeDriver() {
 		System.out.println("Launching Chrome Driver.");
 		if (remoteAddress != null) {
@@ -136,6 +126,7 @@ public class WebDriverFactory {
 	 * 
 	 * @return
 	 */
+	/*
 	private static WebDriver getPhantomjsDriver() {
 		System.out.println("Opening phantom js driver");
 		if (remoteAddress != null) {
@@ -148,6 +139,6 @@ public class WebDriverFactory {
 		}
 	}
 	
-	
+*/	
 	
 }

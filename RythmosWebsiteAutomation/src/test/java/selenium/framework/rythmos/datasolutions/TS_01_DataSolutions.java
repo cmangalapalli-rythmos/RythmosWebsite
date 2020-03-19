@@ -29,7 +29,7 @@ public class TS_01_DataSolutions extends CommonMethods{
 	}
 	
 	@Test(priority = 0)
-	public void TC_01_NavigatingtoGDPLpage() throws InterruptedException {
+	public void TC_01_NavigatingtoDataSolutionspage() throws InterruptedException {
 		String testcaseName = new Object() {
 		}.getClass().getEnclosingMethod().getName();
 		ReporterTextBold("Executing Test Case : " + testcaseName);
