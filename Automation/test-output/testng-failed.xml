@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="validations.DataSolutionsTest">
+        <methods>
+          <include name="validateIntroOfToolExpertise"/>
+          <include name="closeBrowser"/>
+          <include name="validateH3PlatFormExpertise"/>
+          <include name="quiteBrowser"/>
+          <include name="validateCloudDWH"/>
+          <include name="validateVisualization"/>
+          <include name="lauchBrowser"/>
+          <include name="validateOnPremiseDWH"/>
+          <include name="validateEtlAndDataPrep"/>
+          <include name="validateH54OfToolExpertise"/>
+          <include name="validateH5OfDWH"/>
+          <include name="validatePlatFormExpertise"/>
+          <include name="validateAboutRythmos"/>
+          <include name="validateH5OfCloud"/>
+          <include name="validateH8OfDataOverview"/>
+          <include name="validateH5OfAnalytics"/>
+          <include name="validateH5OfSupport"/>
+          <include name="getURL"/>
+          <include name="validateGetHelpToday"/>
+          <include name="validateH8SummaryDataSolutions"/>
+        </methods>
+      </class> <!-- validations.DataSolutionsTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
