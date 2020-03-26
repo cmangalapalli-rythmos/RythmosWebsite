@@ -29,18 +29,18 @@ public class DataSolutionsPage {
 	public static final By VALIDATE_SUPPORT_IMAGE = By.xpath(".//*[@id='hs_cos_wrapper_module_1489585492644770']/div/a/img");
 
 	
-	public void clickLinkByHref(String href) {
-	    List<WebElement> anchors = driver.findElements(By.tagName("a"));
-	    Iterator<WebElement> i = anchors.iterator();
-
-	    while(i.hasNext()) {
-	        WebElement anchor = i.next();
-	        if(anchor.getAttribute("href").contains(href)) {
-	            anchor.click();
-	            break;
-	        }
-	    }
-	}
+//	public void clickLinkByHref(String href) {
+//	    List<WebElement> anchors = driver.findElements(By.tagName("a"));
+//	    Iterator<WebElement> i = anchors.iterator();
+//
+//	    while(i.hasNext()) {
+//	        WebElement anchor = i.next();
+//	        if(anchor.getAttribute("href").contains(href)) {
+//	            anchor.click();
+//	            break;
+//	        }
+//	    }
+//	}
 	
 	
 	public void clickOnSolutions(){		

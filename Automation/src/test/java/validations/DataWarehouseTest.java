@@ -1,34 +1,47 @@
 package validations;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-public class DataWarehouseTest {
-		WebDriver driver;
+import common.Base;
+
+@Listeners(common.CustomListener.class)
+public class DataWarehouseTest extends Base {
 		
-		@BeforeTest
+		
+		@BeforeMethod
 		public void lauchBrowser() {
-			System.setProperty("webdriver.chrome.driver", "D:/RCOM/Automation/resources/chromedriver.exe");
-			driver = new ChromeDriver();
+			browserInitialization();
 			 
 		}
 		
 		@Test
 		public void verifyDataWarehousePage() {
-	        driver.get("https://www.rythmos.com/data-warehouse");
-	        driver.manage().window().maximize();
-	        JavascriptExecutor js = (JavascriptExecutor) driver;
-	        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");      
+			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/a")).click();
+			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/ul/li[1]/a")).click();
+			driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
+			String expected = "https://www.rythmos.com/data-warehouse";
+			String actual = driver.getCurrentUrl();
+			Assert.assertEquals(actual, expected);
+			      
 		}
 		
-		@AfterTest
+		@AfterMethod
 		public void closeBrowser() {
 			driver.close();
 			driver.quit();
-			System.out.println("Test completed successfully!");
+			System.out.println("Data Warehouse page test completed successfully!");
 		}		
 }
 

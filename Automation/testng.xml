@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="1" name="Test">
+  <test thread-count="5" name="Test">
     <classes>      
-      <class name="validations.DataSolutionsPage"/>
-      <class name="validations.CloudSolutionsPage"/>
-      <class name="validations.AnalyticsPage"/>
-      <class name="validations.DataSupport"/>
-      <class name="validations.DataWarehousePage"/>
+      <class name="validations.DataSolutionsTest"/>
+     <!--  <class name="validations.CloudSolutionsTest"/>
+      <class name="validations.AnalyticsTest"/>
+      <class name="validations.DataSupportTest"/>
+      <class name="validations.DataWarehouseTest"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

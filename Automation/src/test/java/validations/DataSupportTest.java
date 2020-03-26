@@ -1,34 +1,39 @@
 package validations;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import java.util.concurrent.TimeUnit;
+
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-public class DataSupportTest {
-		WebDriver driver;
-		
-		@BeforeTest
+import common.Base;
+@Listeners(common.CustomListener.class)
+public class DataSupportTest extends Base {
+				
+		@BeforeMethod
 		public void lauchBrowser() {
-			System.setProperty("webdriver.chrome.driver", "D:/RCOM/Automation/resources/chromedriver.exe");
-			driver = new ChromeDriver();
-			 
+				 
 		}
 		
 		@Test
-		public void verifyDataSupportPage() {
-	        driver.get("https://www.rythmos.com/data-support");
-	        driver.manage().window().maximize();
-	        JavascriptExecutor js = (JavascriptExecutor) driver;
-	        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");      
-		}
+		public void goToDataSupportPage() {
+			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/a")).click();
+			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/ul/li[4]/a")).click();
+			driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
+			String expected = "https://www.rythmos.com/data-support";
+			String actual = driver.getCurrentUrl();
+			Assert.assertEquals(actual, expected);
+			
+			
+	    }
 		
-		@AfterTest
+		@AfterMethod
 		public void closeBrowser() {
-			driver.close();
 			driver.quit();
-			System.out.println("Test completed successfully!");
+			System.out.println("Data support page test completed successfully!");
 		}		
 }
 
