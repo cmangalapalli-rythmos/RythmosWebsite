@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -17,12 +18,15 @@ import common.Base;
 @Listeners(common.CustomListener.class)
 public class DataSolutionsTest extends Base{		
 		
+		
+
+
 		@BeforeMethod
 		public void launchBrowser() {
 			browserInitialization();
 		}
 		
-		@Test
+		@Test(priority=1)
 		public void goToDataSolutionsPage() {    
 			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/a")).click();
 			driver.findElement(By.xpath(".//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/a")).click();			
@@ -31,19 +35,21 @@ public class DataSolutionsTest extends Base{
 			Assert.assertEquals(actual, expected);				              
 		}	
 		
-		@Test
+		@Test(priority=2)
 		public void verifyInnerPageSubTitleHeader() {    
 			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/a")).click();
 			driver.findElement(By.xpath(".//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/a")).click();
+			WebDriverWait wait=new WebDriverWait(driver, 20);
 			String expected = "Data Solutions";
 			String actual = driver.findElement(By.xpath("//*[@id='hs_cos_wrapper_widget_1525098855444']/div/div/div[1]/h1")).getText(); 
 			Assert.assertEquals(actual, expected);					              
 		}
 		
-		@Test
+		@Test(priority=3)
 		public void verifyDataWareHouseIsALink() {    
 			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/a")).click();
 			driver.findElement(By.xpath(".//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/a")).click();
+			WebDriverWait wait=new WebDriverWait(driver, 20);
 	     	WebElement linkName = driver.findElement(By.linkText("Data Warehouse"));
 			if(linkName.isDisplayed())
 			{
@@ -55,11 +61,12 @@ public class DataSolutionsTest extends Base{
 			}        					              
 		}
 		
-		@Test
+		@Test(priority=4)
 		public void verifyBuildOrEnhanceDataWarehouseIsALink() {    
 			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/a")).click();
 			driver.findElement(By.xpath(".//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/a")).click();
-	     	WebElement linkName = driver.findElement(By.linkText("Build or Enhance a Data Warehouse"));
+			WebDriverWait wait=new WebDriverWait(driver, 20);
+			WebElement linkName = driver.findElement(By.linkText("Build or Enhance a Data Warehouse"));
 			if(linkName.isDisplayed())
 			{
 			  System.out.println("Build or Enhance a Data Warehouse link is displayed");
@@ -70,11 +77,12 @@ public class DataSolutionsTest extends Base{
 			}        					              
 		}
 		
-		@Test
+		@Test(priority=5)
 		public void verifyAnalyticsIsALink() {    
 			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/a")).click();
 			driver.findElement(By.xpath(".//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/a")).click();
-	     	WebElement linkName = driver.findElement(By.linkText("Analytics"));
+			WebDriverWait wait=new WebDriverWait(driver, 20);
+			WebElement linkName = driver.findElement(By.linkText("Analytics"));
 			if(linkName.isDisplayed())
 			{
 			  System.out.println("Analytics link is displayed");
@@ -85,11 +93,12 @@ public class DataSolutionsTest extends Base{
 			}        					              
 		}
 		
-		@Test
+		@Test(priority=6)
 		public void verifyBuildOrEnhanceAnalyticsSystemsIsALink() {    
 			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/a")).click();
 			driver.findElement(By.xpath(".//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/a")).click();
-	     	WebElement linkName = driver.findElement(By.linkText("Build or Enhance Analytics Systems"));
+			WebDriverWait wait=new WebDriverWait(driver, 20);
+			WebElement linkName = driver.findElement(By.linkText("Build or Enhance Analytics Systems"));
 			if(linkName.isDisplayed())
 			{
 			  System.out.println("Build or Enhance Analytics Systems link is displayed");
@@ -100,11 +109,12 @@ public class DataSolutionsTest extends Base{
 			}        					              
 		}
 		
-		@Test
+		@Test(priority=7)
 		public void verifyCloudIsALink() {    
 			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/a")).click();
 			driver.findElement(By.xpath(".//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/a")).click();
-	     	WebElement linkName = driver.findElement(By.linkText("Cloud"));
+			WebDriverWait wait=new WebDriverWait(driver, 20);
+			WebElement linkName = driver.findElement(By.linkText("Cloud"));
 			if(linkName.isDisplayed())
 			{
 			  System.out.println("Cloud link is displayed");
@@ -115,11 +125,12 @@ public class DataSolutionsTest extends Base{
 			}        					              
 		}
 		
-		@Test
+		@Test(priority=8)
 		public void verifyLiftAndShiftADataWarehousetoCloudIsALink() {    
 			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/a")).click();
 			driver.findElement(By.xpath(".//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/a")).click();
-	     	WebElement linkName = driver.findElement(By.linkText("Lift and Shift a Data Warehouse to Cloud"));
+			WebDriverWait wait=new WebDriverWait(driver, 20);
+			WebElement linkName = driver.findElement(By.linkText("Lift and Shift a Data Warehouse to Cloud"));
 			if(linkName.isDisplayed())
 			{
 			  System.out.println("Lift and Shift a Data Warehouse to Cloud link is displayed");
@@ -130,10 +141,11 @@ public class DataSolutionsTest extends Base{
 			}        					              
 		}
 		
-		@Test
+		@Test(priority=9)
 		public void verifySupportIsALink() {    
 			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/a")).click();
 			driver.findElement(By.xpath(".//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/a")).click();
+			WebDriverWait wait=new WebDriverWait(driver, 20);
 	     	WebElement linkName = driver.findElement(By.linkText("Support"));
 			if(linkName.isDisplayed())
 			{
@@ -145,10 +157,11 @@ public class DataSolutionsTest extends Base{
 			}        					              
 		}
 		
-		@Test
+		@Test(priority=10)
 		public void verifySupportAndEvolveADataWarehouseSolutionIsALink() {    
 			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/a")).click();
 			driver.findElement(By.xpath(".//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/a")).click();
+			WebDriverWait wait=new WebDriverWait(driver, 20);
 	     	WebElement linkName = driver.findElement(By.linkText("Support and Evolve a Data Warehouse Solution"));
 			if(linkName.isDisplayed())
 			{
@@ -161,10 +174,11 @@ public class DataSolutionsTest extends Base{
 		}
 		
 		
-		@Test
+		@Test(priority=11)
 		public void verifyGetHelpTodayIsALink() {    
 			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/a")).click();
 			driver.findElement(By.xpath(".//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/a")).click();
+			WebDriverWait wait=new WebDriverWait(driver, 20);
 	     	WebElement linkName = driver.findElement(By.linkText("Get Help Today!"));
 			if(linkName.isDisplayed())
 			{
@@ -176,10 +190,11 @@ public class DataSolutionsTest extends Base{
 			}        					              
 		}
 		
-		@Test
+		@Test(priority=12)
 		public void verifyGetFreeAssessmentIsALink() {    
 			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/a")).click();
 			driver.findElement(By.xpath(".//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/a")).click();
+			WebDriverWait wait=new WebDriverWait(driver, 20);
 	     	WebElement linkName = driver.findElement(By.linkText("Get Free Assessment"));
 			if(linkName.isDisplayed())
 			{
@@ -191,11 +206,12 @@ public class DataSolutionsTest extends Base{
 			}        					              
 		}
 		
-		@Test
+		@Test(priority=13)
 		public void verifyContactUsIsALink() {    
 			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/a")).click();
 			driver.findElement(By.xpath(".//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/a")).click();
-	     	WebElement linkName = driver.findElement(By.linkText("Contact Us"));
+			WebDriverWait wait=new WebDriverWait(driver, 20);
+			WebElement linkName = driver.findElement(By.linkText("Contact Us"));
 			if(linkName.isDisplayed())
 			{
 			  System.out.println("Contact Us link is displayed");
@@ -206,11 +222,12 @@ public class DataSolutionsTest extends Base{
 			}        					              
 		}
 		
-		@Test
+		@Test(priority=14)
 		public void verifyRythmosBlogIsALink() {    
 			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/a")).click();
 			driver.findElement(By.xpath(".//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/a")).click();
-	     	WebElement linkName = driver.findElement(By.linkText("Rythmos Blog"));
+			WebDriverWait wait=new WebDriverWait(driver, 20);
+			WebElement linkName = driver.findElement(By.linkText("Rythmos Blog"));
 			if(linkName.isDisplayed())
 			{
 			  System.out.println("Rythmos Blog link is displayed");

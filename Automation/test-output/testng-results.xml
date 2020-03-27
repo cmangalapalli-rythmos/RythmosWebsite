@@ -1,305 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="7" ignored="0" total="14" passed="7">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="185701" started-at="2020-03-26T18:18:41 IST" finished-at="2020-03-26T18:21:47 IST">
+  <suite name="Default suite" duration-ms="39551" started-at="2020-03-27T17:38:22 IST" finished-at="2020-03-27T17:39:01 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="185701" started-at="2020-03-26T18:18:41 IST" finished-at="2020-03-26T18:21:47 IST">
-      <class name="validations.DataSolutionsTest">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="launchBrowser" is-config="true" duration-ms="12668" started-at="2020-03-26T18:18:41 IST" finished-at="2020-03-26T18:18:54 IST">
+    <test name="Default test" duration-ms="39551" started-at="2020-03-27T17:38:22 IST" finished-at="2020-03-27T17:39:01 IST">
+      <class name="validations.DataSupportTest">
+        <test-method status="PASS" signature="lauchBrowser()[pri:0, instance:validations.DataSupportTest@184f6be2]" name="lauchBrowser" is-config="true" duration-ms="12739" started-at="2020-03-27T17:38:22 IST" finished-at="2020-03-27T17:38:35 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="goToDataSolutionsPage()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="goToDataSolutionsPage" duration-ms="838" started-at="2020-03-26T18:18:54 IST" finished-at="2020-03-26T18:18:55 IST">
+        </test-method> <!-- lauchBrowser -->
+        <test-method status="PASS" signature="goToDataSupportPage()[pri:0, instance:validations.DataSupportTest@184f6be2]" name="goToDataSupportPage" duration-ms="787" started-at="2020-03-27T17:38:35 IST" finished-at="2020-03-27T17:38:36 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToDataSolutionsPage -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="closeBrowser" is-config="true" duration-ms="715" started-at="2020-03-26T18:18:55 IST" finished-at="2020-03-26T18:18:56 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="launchBrowser" is-config="true" duration-ms="10705" started-at="2020-03-26T18:18:56 IST" finished-at="2020-03-26T18:19:06 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="verifyAnalyticsIsALink()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="verifyAnalyticsIsALink" duration-ms="1191" started-at="2020-03-26T18:19:06 IST" finished-at="2020-03-26T18:19:08 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAnalyticsIsALink -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="closeBrowser" is-config="true" duration-ms="699" started-at="2020-03-26T18:19:08 IST" finished-at="2020-03-26T18:19:08 IST">
+        </test-method> <!-- goToDataSupportPage -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:validations.DataSupportTest@184f6be2]" name="closeBrowser" is-config="true" duration-ms="699" started-at="2020-03-27T17:38:36 IST" finished-at="2020-03-27T17:38:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="launchBrowser" is-config="true" duration-ms="11638" started-at="2020-03-26T18:19:08 IST" finished-at="2020-03-26T18:19:20 IST">
+        <test-method status="PASS" signature="lauchBrowser()[pri:0, instance:validations.DataSupportTest@184f6be2]" name="lauchBrowser" is-config="true" duration-ms="10936" started-at="2020-03-27T17:38:36 IST" finished-at="2020-03-27T17:38:47 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="FAIL" signature="verifyBuildOrEnhanceAnalyticsSystemsIsALink()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="verifyBuildOrEnhanceAnalyticsSystemsIsALink" duration-ms="526" started-at="2020-03-26T18:19:20 IST" finished-at="2020-03-26T18:19:20 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Build or Enhance Analytics Systems"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LMIPL-131', ip: '192.168.0.8', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Chandan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51324}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 484bab58dbc207166d5230e80f091d60
-*** Element info: {Using=link text, value=Build or Enhance Analytics Systems}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Build or Enhance Analytics Systems"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LMIPL-131', ip: '192.168.0.8', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Chandan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51324}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 484bab58dbc207166d5230e80f091d60
-*** Element info: {Using=link text, value=Build or Enhance Analytics Systems}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at validations.DataSolutionsTest.verifyBuildOrEnhanceAnalyticsSystemsIsALink(DataSolutionsTest.java:92)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBuildOrEnhanceAnalyticsSystemsIsALink -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="closeBrowser" is-config="true" duration-ms="709" started-at="2020-03-26T18:19:22 IST" finished-at="2020-03-26T18:19:23 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="launchBrowser" is-config="true" duration-ms="10899" started-at="2020-03-26T18:19:23 IST" finished-at="2020-03-26T18:19:33 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="verifyBuildOrEnhanceDataWarehouseIsALink()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="verifyBuildOrEnhanceDataWarehouseIsALink" duration-ms="937" started-at="2020-03-26T18:19:33 IST" finished-at="2020-03-26T18:19:34 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBuildOrEnhanceDataWarehouseIsALink -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="closeBrowser" is-config="true" duration-ms="671" started-at="2020-03-26T18:19:34 IST" finished-at="2020-03-26T18:19:35 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="launchBrowser" is-config="true" duration-ms="10838" started-at="2020-03-26T18:19:35 IST" finished-at="2020-03-26T18:19:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="FAIL" signature="verifyCloudIsALink()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="verifyCloudIsALink" duration-ms="391" started-at="2020-03-26T18:19:46 IST" finished-at="2020-03-26T18:19:46 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Cloud"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LMIPL-131', ip: '192.168.0.8', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Chandan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51432}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5790edaf2fc04ba447a0aa8e5d7a608c
-*** Element info: {Using=link text, value=Cloud}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Cloud"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LMIPL-131', ip: '192.168.0.8', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Chandan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51432}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5790edaf2fc04ba447a0aa8e5d7a608c
-*** Element info: {Using=link text, value=Cloud}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at validations.DataSolutionsTest.verifyCloudIsALink(DataSolutionsTest.java:107)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCloudIsALink -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="closeBrowser" is-config="true" duration-ms="658" started-at="2020-03-26T18:19:47 IST" finished-at="2020-03-26T18:19:48 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="launchBrowser" is-config="true" duration-ms="10855" started-at="2020-03-26T18:19:48 IST" finished-at="2020-03-26T18:19:59 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="verifyContactUsIsALink()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="verifyContactUsIsALink" duration-ms="919" started-at="2020-03-26T18:19:59 IST" finished-at="2020-03-26T18:19:59 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyContactUsIsALink -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="closeBrowser" is-config="true" duration-ms="704" started-at="2020-03-26T18:19:59 IST" finished-at="2020-03-26T18:20:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="launchBrowser" is-config="true" duration-ms="10725" started-at="2020-03-26T18:20:00 IST" finished-at="2020-03-26T18:20:11 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="FAIL" signature="verifyDataWareHouseIsALink()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="verifyDataWareHouseIsALink" duration-ms="515" started-at="2020-03-26T18:20:11 IST" finished-at="2020-03-26T18:20:11 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Data Warehouse"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LMIPL-131', ip: '192.168.0.8', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Chandan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51537}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 26d1e2af75e0360416ce71b081003c69
-*** Element info: {Using=link text, value=Data Warehouse}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Data Warehouse"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LMIPL-131', ip: '192.168.0.8', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Chandan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51537}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 26d1e2af75e0360416ce71b081003c69
-*** Element info: {Using=link text, value=Data Warehouse}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at validations.DataSolutionsTest.verifyDataWareHouseIsALink(DataSolutionsTest.java:47)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDataWareHouseIsALink -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="closeBrowser" is-config="true" duration-ms="671" started-at="2020-03-26T18:20:13 IST" finished-at="2020-03-26T18:20:13 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="launchBrowser" is-config="true" duration-ms="11633" started-at="2020-03-26T18:20:13 IST" finished-at="2020-03-26T18:20:25 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="FAIL" signature="verifyGetFreeAssessmentIsALink()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="verifyGetFreeAssessmentIsALink" duration-ms="548" started-at="2020-03-26T18:20:25 IST" finished-at="2020-03-26T18:20:26 IST">
+        </test-method> <!-- lauchBrowser -->
+        <test-method status="FAIL" signature="verifyGetFreeAssessmentIsALink()[pri:0, instance:validations.DataSupportTest@184f6be2]" name="verifyGetFreeAssessmentIsALink" duration-ms="426" started-at="2020-03-27T17:38:47 IST" finished-at="2020-03-27T17:38:48 IST">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Get Free Assessment"}
@@ -308,8 +32,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LMIPL-131', ip: '192.168.0.8', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Chandan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51589}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3490c0febf528b122e767e5f9d5b9396
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Chandan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51570}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbc7efd0eb3fd4ee1d8e2447413bfdce
 *** Element info: {Using=link text, value=Get Free Assessment}]]>
             </message>
             <full-stacktrace>
@@ -319,8 +43,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LMIPL-131', ip: '192.168.0.8', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Chandan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51589}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3490c0febf528b122e767e5f9d5b9396
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Chandan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51570}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbc7efd0eb3fd4ee1d8e2447413bfdce
 *** Element info: {Using=link text, value=Get Free Assessment}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -336,7 +60,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
 at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at validations.DataSolutionsTest.verifyGetFreeAssessmentIsALink(DataSolutionsTest.java:183)
+at validations.DataSupportTest.verifyGetFreeAssessmentIsALink(DataSupportTest.java:49)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -371,287 +95,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetFreeAssessmentIsALink -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="closeBrowser" is-config="true" duration-ms="669" started-at="2020-03-26T18:20:27 IST" finished-at="2020-03-26T18:20:27 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:validations.DataSupportTest@184f6be2]" name="closeBrowser" is-config="true" duration-ms="676" started-at="2020-03-27T17:38:48 IST" finished-at="2020-03-27T17:38:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="launchBrowser" is-config="true" duration-ms="10763" started-at="2020-03-26T18:20:27 IST" finished-at="2020-03-26T18:20:38 IST">
+        <test-method status="PASS" signature="lauchBrowser()[pri:0, instance:validations.DataSupportTest@184f6be2]" name="lauchBrowser" is-config="true" duration-ms="10908" started-at="2020-03-27T17:38:49 IST" finished-at="2020-03-27T17:39:00 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="verifyGetHelpTodayIsALink()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="verifyGetHelpTodayIsALink" duration-ms="1517" started-at="2020-03-26T18:20:38 IST" finished-at="2020-03-26T18:20:40 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyGetHelpTodayIsALink -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="closeBrowser" is-config="true" duration-ms="669" started-at="2020-03-26T18:20:40 IST" finished-at="2020-03-26T18:20:40 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="launchBrowser" is-config="true" duration-ms="10749" started-at="2020-03-26T18:20:40 IST" finished-at="2020-03-26T18:20:51 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="FAIL" signature="verifyInnerPageSubTitleHeader()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="verifyInnerPageSubTitleHeader" duration-ms="513" started-at="2020-03-26T18:20:51 IST" finished-at="2020-03-26T18:20:52 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='hs_cos_wrapper_widget_1525098855444']/div/div/div[1]/h1"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LMIPL-131', ip: '192.168.0.8', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Chandan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51691}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e6dcc1f53165428d468c06b9ad743ed8
-*** Element info: {Using=xpath, value=//*[@id='hs_cos_wrapper_widget_1525098855444']/div/div/div[1]/h1}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='hs_cos_wrapper_widget_1525098855444']/div/div/div[1]/h1"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LMIPL-131', ip: '192.168.0.8', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Chandan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51691}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e6dcc1f53165428d468c06b9ad743ed8
-*** Element info: {Using=xpath, value=//*[@id='hs_cos_wrapper_widget_1525098855444']/div/div/div[1]/h1}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at validations.DataSolutionsTest.verifyInnerPageSubTitleHeader(DataSolutionsTest.java:39)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- lauchBrowser -->
+        <test-method status="PASS" signature="verifyInnerPageSubTitleHeader()[pri:0, instance:validations.DataSupportTest@184f6be2]" name="verifyInnerPageSubTitleHeader" duration-ms="797" started-at="2020-03-27T17:39:00 IST" finished-at="2020-03-27T17:39:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInnerPageSubTitleHeader -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="closeBrowser" is-config="true" duration-ms="662" started-at="2020-03-26T18:20:53 IST" finished-at="2020-03-26T18:20:53 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:validations.DataSupportTest@184f6be2]" name="closeBrowser" is-config="true" duration-ms="676" started-at="2020-03-27T17:39:01 IST" finished-at="2020-03-27T17:39:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="launchBrowser" is-config="true" duration-ms="11005" started-at="2020-03-26T18:20:53 IST" finished-at="2020-03-26T18:21:04 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="verifyLiftAndShiftADataWarehousetoCloudIsALink()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="verifyLiftAndShiftADataWarehousetoCloudIsALink" duration-ms="1465" started-at="2020-03-26T18:21:04 IST" finished-at="2020-03-26T18:21:06 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLiftAndShiftADataWarehousetoCloudIsALink -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="closeBrowser" is-config="true" duration-ms="704" started-at="2020-03-26T18:21:06 IST" finished-at="2020-03-26T18:21:07 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="launchBrowser" is-config="true" duration-ms="10769" started-at="2020-03-26T18:21:07 IST" finished-at="2020-03-26T18:21:17 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="FAIL" signature="verifyRythmosBlogIsALink()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="verifyRythmosBlogIsALink" duration-ms="528" started-at="2020-03-26T18:21:17 IST" finished-at="2020-03-26T18:21:18 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Rythmos Blog"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LMIPL-131', ip: '192.168.0.8', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Chandan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51794}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 493236d3f3d3521c7a36e1d9608aefd1
-*** Element info: {Using=link text, value=Rythmos Blog}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Rythmos Blog"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LMIPL-131', ip: '192.168.0.8', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Chandan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51794}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 493236d3f3d3521c7a36e1d9608aefd1
-*** Element info: {Using=link text, value=Rythmos Blog}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at validations.DataSolutionsTest.verifyRythmosBlogIsALink(DataSolutionsTest.java:213)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRythmosBlogIsALink -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="closeBrowser" is-config="true" duration-ms="670" started-at="2020-03-26T18:21:19 IST" finished-at="2020-03-26T18:21:20 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="launchBrowser" is-config="true" duration-ms="12346" started-at="2020-03-26T18:21:20 IST" finished-at="2020-03-26T18:21:32 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="FAIL" signature="verifySupportAndEvolveADataWarehouseSolutionIsALink()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="verifySupportAndEvolveADataWarehouseSolutionIsALink" duration-ms="606" started-at="2020-03-26T18:21:32 IST" finished-at="2020-03-26T18:21:33 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Support and Evolve a Data Warehouse Solution"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LMIPL-131', ip: '192.168.0.8', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Chandan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51847}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 82c703d3dafbb43179bf795e241386ec
-*** Element info: {Using=link text, value=Support and Evolve a Data Warehouse Solution}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Support and Evolve a Data Warehouse Solution"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LMIPL-131', ip: '192.168.0.8', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Chandan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51847}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 82c703d3dafbb43179bf795e241386ec
-*** Element info: {Using=link text, value=Support and Evolve a Data Warehouse Solution}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at validations.DataSolutionsTest.verifySupportAndEvolveADataWarehouseSolutionIsALink(DataSolutionsTest.java:152)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySupportAndEvolveADataWarehouseSolutionIsALink -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="closeBrowser" is-config="true" duration-ms="679" started-at="2020-03-26T18:21:34 IST" finished-at="2020-03-26T18:21:35 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="launchBrowser" is-config="true" duration-ms="10716" started-at="2020-03-26T18:21:35 IST" finished-at="2020-03-26T18:21:45 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="verifySupportIsALink()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="verifySupportIsALink" duration-ms="994" started-at="2020-03-26T18:21:45 IST" finished-at="2020-03-26T18:21:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySupportIsALink -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:validations.DataSolutionsTest@1f7030a6]" name="closeBrowser" is-config="true" duration-ms="674" started-at="2020-03-26T18:21:46 IST" finished-at="2020-03-26T18:21:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- validations.DataSolutionsTest -->
+      </class> <!-- validations.DataSupportTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

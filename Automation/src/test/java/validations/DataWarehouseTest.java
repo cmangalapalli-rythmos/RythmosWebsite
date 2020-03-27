@@ -5,7 +5,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -26,7 +28,7 @@ public class DataWarehouseTest extends Base {
 			 
 		}
 		
-		@Test
+		@Test(priority=1)
 		public void verifyDataWarehousePage() {
 			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/a")).click();
 			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/ul/li[1]/a")).click();
@@ -35,6 +37,22 @@ public class DataWarehouseTest extends Base {
 			String actual = driver.getCurrentUrl();
 			Assert.assertEquals(actual, expected);
 			      
+		}
+		
+		@Test(priority=2)
+		public void verifyGetFreeAssessmentIsALink() {    
+			driver.findElement(By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/a")).click();
+			driver.findElement(By.xpath(".//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/a")).click();
+			WebDriverWait wait=new WebDriverWait(driver, 20);
+	     	WebElement linkName = driver.findElement(By.linkText("Get Free Assessment"));
+			if(linkName.isDisplayed())
+			{
+			  System.out.println("Get Free Assessment link is displayed");
+			}
+			else
+			{
+			  System.out.println("Get Free Assessment link is NOT displayed");
+			}        					              
 		}
 		
 		@AfterMethod

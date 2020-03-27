@@ -18,10 +18,10 @@ public static WebDriver driver;
 		driver.manage().window().maximize();
 	}
 	
-	public void failed(String testMethodName) {
+	public void failed(String testMethodName){
 		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(srcFile, new File("/Automation/Screenshots/"+testMethodName+"_"+".jpg"));
+			FileUtils.copyFile(srcFile, new File("D:/2020/Rythmos.com/RythmosWebsite/Automation/Screenshots/"+testMethodName+".png"));
 		} catch(IOException e) {
 			e.printStackTrace();
 		}

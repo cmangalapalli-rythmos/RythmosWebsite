@@ -3,19 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="validations.DataSolutionsTest">
+      <class name="validations.DataSupportTest">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-          <include name="verifyDataWareHouseIsALink"/>
-          <include name="verifyBuildOrEnhanceAnalyticsSystemsIsALink"/>
-          <include name="verifyInnerPageSubTitleHeader"/>
-          <include name="verifyRythmosBlogIsALink"/>
-          <include name="verifyCloudIsALink"/>
           <include name="verifyGetFreeAssessmentIsALink"/>
-          <include name="verifySupportAndEvolveADataWarehouseSolutionIsALink"/>
+          <include name="lauchBrowser"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- validations.DataSolutionsTest -->
+      </class> <!-- validations.DataSupportTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
